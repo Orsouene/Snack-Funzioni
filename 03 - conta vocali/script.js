@@ -21,3 +21,22 @@ function VerificazioneVocali(parola, vocali) {
 //Risultato atteso se si passa 'javascript': 3 (a, a, i)
 const result = VerificazioneVocali(parola, vocali);
 console.log(result);
+
+/////////////////////// ARROW FUNCTION////////////////////////////////
+let parolaArrow = prompt("inserisce una parola");
+const vocaliArrow = ["a", "e", "i", "o", "u"];
+
+const VerificazioneVocaliArrow = (parolaArrow, vocaliArrow) => {
+  let listeArrow = [];
+  for (let i = 0; i < parolaArrow.length; i++) {
+    for (let j = 0; j < vocaliArrow.length; j++) {
+      if (parolaArrow[i].includes(vocaliArrow[j])) {
+        listeArrow.push(vocaliArrow[j]);
+      }
+    }
+  }
+
+  return listeArrow;
+};
+const resultArrow = VerificazioneVocaliArrow(parolaArrow, vocaliArrow);
+console.log(resultArrow);
