@@ -3,12 +3,25 @@
 const name = "Mario";
 
 let nome = prompt("Scrive il tuo nome ");
-let saluto = "";
-// Dichiara la funzione qui.
-const salutare = (nome, saluto) =>
+// // Dichiara la funzione qui.
+
+function salutare(nome) {
   // Invoca la funzione qui e stampa il risultato in console
-  (saluto = "Ciao " + nome);
+  let saluto = "Ciao " + nome;
+  return saluto;
+}
 
 //Risultato atteso se si passa 'Mario': // ciao Mario
 const resultato = salutare(nome);
 console.log(resultato);
+/////////////////////// Arrow function/////////////////////////////////
+const nameArrow = "Mario";
+
+let nomeArrow = prompt("Scrive il tuo nome ");
+
+const salutareArrow = (nomeArrow) => {
+  let salutoArrow = "Ciao " + nomeArrow;
+  return salutoArrow;
+};
+const resultatoArrow = salutareArrow(nomeArrow);
+console.log(resultatoArrow);
