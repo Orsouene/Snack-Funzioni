@@ -11,6 +11,17 @@ function arrayOfnames(names) {
   }
   return newarray;
 }
-//Risultato atteso: ["A", "L", "M", "A", "G", "A"]
+// //Risultato atteso: ["A", "L", "M", "A", "G", "A"]
+const finalArray = arrayOfnames(names);
+console.log(finalArray);
+
+///////////////////////// ARROW FUNCTION//////////////////////////
+const arrayOfnames = (names) => {
+  newarray = [];
+  for (let i = 0; i < names.length; i++) {
+    newarray.push(names[i].charAt(0));
+  }
+  return newarray;
+};
 const finalArray = arrayOfnames(names);
 console.log(finalArray);
