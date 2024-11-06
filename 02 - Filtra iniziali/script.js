@@ -3,10 +3,10 @@
 const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
 
 let lettera = prompt("inserisce una lettera ").toUpperCase();
-// Dichiara la funzione qui.
+// // Dichiara la funzione qui.
 function myArray(names, lettera) {
-  // Invoca la funzione qui e stampa il risultato in console
-  newArray = [];
+  //   // Invoca la funzione qui e stampa il risultato in console
+  let newArray = [];
 
   for (let i = 0; i < names.length; i++) {
     if (names[i].charAt(0) === lettera) {
@@ -15,6 +15,24 @@ function myArray(names, lettera) {
   }
   return newArray;
 }
-//Risultato atteso se si passa la lettera A: ["Anna", "Adele", "Alessandra"]
+// //Risultato atteso se si passa la lettera A: ["Anna", "Adele", "Alessandra"]
 const finalArray = myArray(names, lettera);
 console.log(finalArray);
+
+///////////////////////// ARROW FUNCTION//////////////////////////
+const namesArrow = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
+
+let letteraArrow = prompt("inserisce una lettera ").toUpperCase();
+const myArray = (namesArrow, letteraArrow) => {
+  let newArray = [];
+
+  for (let i = 0; i < namesArrow.length; i++) {
+    if (namesArrow[i].charAt(0) === letteraArrow) {
+      newArray.push(namesArrow[i]);
+    }
+  }
+  return newArray;
+};
+
+const finalArrayArrow = myArray(namesArrow, letteraArrow);
+console.log(finalArrayArrow);

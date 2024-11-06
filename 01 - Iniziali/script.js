@@ -2,26 +2,27 @@
 
 const names = ["Anna", "Luca", "Marco", "Adele", "Giovanni", "Alessandra"];
 
-// Dichiara la funzione qui.
+// // Dichiara la funzione qui.
 function arrayOfnames(names) {
-  // Invoca la funzione qui e stampa il risultato in console
+  //   // Invoca la funzione qui e stampa il risultato in console
   newarray = [];
   for (let i = 0; i < names.length; i++) {
     newarray.push(names[i].charAt(0));
   }
   return newarray;
 }
-// //Risultato atteso: ["A", "L", "M", "A", "G", "A"]
+// // //Risultato atteso: ["A", "L", "M", "A", "G", "A"]
 const finalArray = arrayOfnames(names);
 console.log(finalArray);
 
 ///////////////////////// ARROW FUNCTION//////////////////////////
-const arrayOfnames = (names) => {
+const namesArrow = ["Anna", "Luca", "Marco", "Adele", "Giovanni", "Alessandra"];
+const arrayOfnamesArrow = (namesArrow) => {
   newarray = [];
-  for (let i = 0; i < names.length; i++) {
-    newarray.push(names[i].charAt(0));
+  for (let i = 0; i < namesArrow.length; i++) {
+    newarray.push(namesArrow[i].charAt(0));
   }
   return newarray;
 };
-const finalArray = arrayOfnames(names);
-console.log(finalArray);
+const finalArrayArrow = arrayOfnamesArrow(namesArrow);
+console.log(finalArrayArrow);
